@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Road to Aurora Odyssey</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, #4e7fff, #76a9ff);
+    }
+    .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .top-section {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background: url('tutukiko.jpg'); 
+        background-size: cover;
+        background-attachment: fixed; 
+        filter: blur(10px); 
+        border-bottom: 2px solid #fff;
+    }
+    .bottom-section {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to bottom, rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0.8));
+        border-top: 2px solid #fff; 
+    }
+    button {
+        padding: 15px 30px;
+        font-size: 20px;
+        background-color: #007bff;
+        color: #fff; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; 
+        margin-top: -25vh;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .text {
+        position: absolute;
+        top: calc(50% + 50px);
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        z-index: 1;
+    }
+    .curves {
+        position: absolute; 
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .curve {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%), linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.5) 75%), linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.5) 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+</style>
+</head>
+<body>
+
+<div class="content">
+    <div class="top-section">
+        <div class="curves"></div>
+    </div>
+    <button onclick="redirectToGamePage()">Road to Photon2024</button>
+    <div class="text">Get ready for an exciting adventure</div>
+    <div class="bottom-section">
+        <div class="curves"></div>
+    </div>
+</div>
+
+<script>
+function redirectToGamePage() {
+    window.location.href = "https://www.photonrun.com";
+}
+</script>
+
+</body>
+</html>
+
